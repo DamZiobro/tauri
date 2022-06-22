@@ -927,10 +927,16 @@ pub fn verify_signature<R>(
 where
   R: Read,
 {
+  println!("DAMIAN - verifying signature");
   // we need to convert the pub key
+  println!("DAMIAN - pub_key: {:?}", pub_key);
   let pub_key_decoded = base64_to_string(pub_key)?;
+  println!("DAMIAN - pub_key_decoded: {:?}", pub_key_decoded);
   let public_key = PublicKey::decode(&pub_key_decoded)?;
+  println!("DAMIAN - public-key: {:?}", public_key);
+  println!("DAMIAN - release_signature: {:?}", release_signature);
   let signature_base64_decoded = base64_to_string(release_signature)?;
+  println!("DAMIAN - signature_base64_decoded: {:?}", signature_base64_decoded);
   let signature = Signature::decode(&signature_base64_decoded)?;
 
   // read all bytes until EOF in the buffer
