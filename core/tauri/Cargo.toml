@@ -81,7 +81,7 @@ shared_child = { version = "1.0", optional = true }
 os_pipe = { version = "1.0", optional = true }
 rfd = { version = "0.9", optional = true }
 raw-window-handle = "0.4.3"
-minisign-verify = { git = "https://github.com/DamZiobro/rust-minisign-verify", rev = "cab3d5f92b8569b7f535b6db39fb7e143c7d2011", optional = true }
+minisign-verify = { git = "https://github.com/DamZiobro/rust-minisign-verify", rev = "7a234376ceed4c7bcda13b5df1163e84aa0947f3", optional = true }
 time = { version = "0.3", features = [ "parsing", "formatting" ], optional = true }
 os_info = { version = "3.4.0", optional = true }
 futures-lite = "1.12"
